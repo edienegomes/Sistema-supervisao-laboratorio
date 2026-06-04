@@ -1,0 +1,6 @@
+CREATE TABLE COMPUTADOR(
+	id_dispo INT PRIMARY KEY,
+	sistema_operacional VARCHAR(30),
+	
+	FOREIGN KEY (id_dispo) REFERENCES DISPOSITIVO (id)
+);

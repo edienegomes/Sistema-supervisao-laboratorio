@@ -1,0 +1,5 @@
+CREATE TABLE LABORATORIO(
+	id_laboratorio INT PRIMARY KEY,
+	capacidade INT NOT NULL,
+	bloco VARCHAR(30) NOT NULL
+);
