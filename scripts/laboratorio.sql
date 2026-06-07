@@ -3,3 +3,12 @@ CREATE TABLE LABORATORIO(
 	capacidade INT NOT NULL,
 	bloco VARCHAR(30) NOT NULL
 );
+
+insert into laboratorio (id_laboratorio,capacidade,bloco)
+values(1,40,'bloco3')
+
+insert into laboratorio (id_laboratorio,capacidade,bloco)
+values(2,30,'bloco2')
+
+insert into laboratorio (id_laboratorio,capacidade,bloco)
+values(3,35,'bloco2')
