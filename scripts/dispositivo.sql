@@ -7,11 +7,7 @@ CREATE TABLE DISPOSITIVO(
 	FOREIGN KEY (id_lab) REFERENCES LABORATORIO (id_laboratorio)
 );
 
-insert into laboratorio (id_laboratorio,capacidade,bloco)
-values
-(1,40,'bloco3'),
-(2,30,'bloco2'),
-(3,35,'bloco2');
+
 
 INSERT INTO DISPOSITIVO (id,nome,status,id_lab)
 VALUES
