@@ -6,13 +6,21 @@ CREATE TABLE DISPOSITIVO(
 	
 	FOREIGN KEY (id_lab) REFERENCES LABORATORIO (id_laboratorio)
 );
-insert into DISPOSITIVO (id,nome,status,id_lab)
-values('440.702.000387.2024','computador','funcionando',1),
-values('440.702.000360.2024','computador','funcionando',1),
-values('440.702.000368.2024','computador','funcionando',1),
-values('440.702.000370.2024','computador','funcionando',1),
-values('440.702.000392.2024','computador','funcionando',1),
-values('440.702.000358.2024','computador','funcionando',1),
-values('440.702.000375.2024','computador','funcionando',1),
-values('440.702.000385.2024','computador','funcionando',1),
-values('440.702.000365.2024','computador','funcionando',1);
+
+insert into laboratorio (id_laboratorio,capacidade,bloco)
+values
+(1,40,'bloco3'),
+(2,30,'bloco2'),
+(3,35,'bloco2');
+
+INSERT INTO DISPOSITIVO (id,nome,status,id_lab)
+VALUES
+('440.702.000387.2024','computador','funcionando',1),
+('440.702.000360.2024','computador','funcionando',1),
+('440.702.000368.2024','computador','funcionando',1),
+('440.702.000370.2024','computador','funcionando',1),
+('440.702.000392.2024','computador','funcionando',1),
+('440.702.000358.2024','computador','funcionando',1),
+('440.702.000375.2024','computador','funcionando',1),
+('440.702.000385.2024','computador','funcionando',1),
+('440.702.000365.2024','computador','funcionando',1);
