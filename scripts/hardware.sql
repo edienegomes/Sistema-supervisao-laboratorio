@@ -2,7 +2,7 @@ CREATE TABLE HARDWARE(
 	id_hardware INT PRIMARY KEY,
 	nome VARCHAR(30) NOT NULL,
 	tipo VARCHAR(30) NOT NULL,
-	id_dispositivo INT,
+	id_dispositivo VARCHAR(30),
 	
 	FOREIGN KEY (id_dispositivo) REFERENCES DISPOSITIVO (id)
 );
