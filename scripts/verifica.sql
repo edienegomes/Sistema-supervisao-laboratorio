@@ -1,6 +1,6 @@
 CREATE TABLE VERIFICA(
 	matricula INT,
-	id INT,
+	id VARCHAR(30),
 	funcionamento VARCHAR(30) NOT NULL,
 	
 	PRIMARY KEY (matricula, id),
