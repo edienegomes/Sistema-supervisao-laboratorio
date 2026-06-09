@@ -1,5 +1,5 @@
 CREATE TABLE PROJETOR(
-	id_reproducao INT PRIMARY KEY,
+	id_reproducao VARCHAR(30) PRIMARY KEY,
 	
 	FOREIGN KEY (id_reproducao) REFERENCES REPRODUCAO (id_dispo)
 );
