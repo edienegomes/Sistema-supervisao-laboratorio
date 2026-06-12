@@ -7,8 +7,6 @@ CREATE TABLE DISPOSITIVO(
 	FOREIGN KEY (id_lab) REFERENCES LABORATORIO (id_laboratorio)
 );
 
-
-
 INSERT INTO DISPOSITIVO (id,nome,status,id_lab)
 VALUES
 ('440.702.000387.2024','computador','funcionando',1),
@@ -20,3 +18,5 @@ VALUES
 ('440.702.000375.2024','computador','funcionando',1),
 ('440.702.000385.2024','computador','funcionando',1),
 ('440.702.000365.2024','computador','funcionando',1);
+
+
