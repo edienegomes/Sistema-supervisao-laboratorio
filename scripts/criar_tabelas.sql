@@ -32,7 +32,7 @@ CREATE TABLE DISPOSITIVO(
 
 CREATE TABLE VERIFICA(
 	matricula INT,
-	id INT,
+	id VARCHAR(30),
 	data_verificacao DATE NOT NULL,
 	
 	PRIMARY KEY (matricula, id),
@@ -45,7 +45,7 @@ CREATE TABLE HARDWARE(
 	id_hardware INT PRIMARY KEY,
 	nome VARCHAR(30) NOT NULL,
 	tipo VARCHAR(30) NOT NULL,
-	id_dispositivo INT,
+	id_dispositivo VARCHAR(30),
 	
 	FOREIGN KEY (id_dispositivo) REFERENCES DISPOSITIVO (id)
 );
@@ -58,19 +58,19 @@ CREATE TABLE COMPUTADOR(
 );
 
 CREATE TABLE REPRODUCAO(
-	id_dispo INT primary key,
+	id_dispo VARCHAR(30) primary key,
 	
 	FOREIGN KEY (id_dispo) REFERENCES DISPOSITIVO (id)
 );
 
 CREATE TABLE TELEVISAO(
-	id_reproducao INT PRIMARY KEY,
+	id_reproducao VARCHAR(30) PRIMARY KEY,
 	
 	FOREIGN KEY (id_reproducao) REFERENCES REPRODUCAO (id_dispo)
 );
 
 CREATE TABLE PROJETOR(
-	id_reproducao INT PRIMARY KEY,
+	id_reproducao VARCHAR(30) PRIMARY KEY,
 	
 	FOREIGN KEY (id_reproducao) REFERENCES REPRODUCAO (id_dispo)
 );
