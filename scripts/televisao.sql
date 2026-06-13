@@ -1,5 +1,0 @@
-CREATE TABLE TELEVISAO(
-	id_reproducao INT PRIMARY KEY,
-	
-	FOREIGN KEY (id_reproducao) REFERENCES REPRODUCAO (id_dispo)
-);
