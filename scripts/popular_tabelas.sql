@@ -30,14 +30,17 @@ VALUES
 --Tabela associativa
 INSERT INTO verifica (matricula,id,data_verificacao)
 VALUES 
-
+('200123435','000007.2021','2026-05-22'),
+('200123435','000008.2021','2026-05-21'),
+('200126767','000025.2021','2026-05-10'),
+('200126767','000029.2021','2026-05-12');
 
 INSERT INTO hardware(id_hardware,nome,tipo,id_dispositivo)
 VALUES
-('1001','mouse','externo','440710.000440.2025'),
-('1002','monitor','externo','440710.000440.2025'),
-('1003','memória RAM','interno','440710.000440.2025'),
-('1001','mouse','externo','440710.000442.2025');
+('1024','mouse','externo','000007.2021'),
+('1069','monitor','externo','000022.2021'),
+('1062','memória RAM','interno','000028.2021'),
+('1012','mouse','externo','000014.2021');
 
 INSERT INTO COMPUTADOR (id_dispo,sistema_operacional)
 VALUES
