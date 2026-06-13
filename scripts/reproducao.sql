@@ -1,5 +1,0 @@
-CREATE TABLE REPRODUCAO(
-	id_dispo VARCHAR(30) primary key,
-	
-	FOREIGN KEY (id_dispo) REFERENCES DISPOSITIVO (id)
-);
