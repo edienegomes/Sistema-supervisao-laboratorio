@@ -21,7 +21,7 @@ JOIN DISPOSITIVO d
 JOIN COMPUTADOR c
     ON d.id = c.id_dispo;
 
-CREATE VIEW vw_monitores_laboratorio AS
+CREATE VIEW view_monitores AS
 SELECT
     m.matricula,
     m.primeiro_nome,
