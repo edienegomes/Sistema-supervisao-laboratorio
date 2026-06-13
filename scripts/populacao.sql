@@ -62,4 +62,3 @@ INSERT INTO reproducao (Id_dispo)
 INSERT INTO projetor(Id_dispo)
 ('440000.00010.2025');
 
-
