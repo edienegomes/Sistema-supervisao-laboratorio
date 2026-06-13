@@ -1,5 +1,6 @@
 CREATE TABLE MONITOR(
 	matricula INT PRIMARY KEY,
-	primeiro_nome VARCHAR(30) NOT NULL
+	primeiro_nome VARCHAR(30) NOT NULL,
 	sobrenome VARCHAR(30) NOT NULL,
+	turno VARCHAR(30) NOT NULL
 );
