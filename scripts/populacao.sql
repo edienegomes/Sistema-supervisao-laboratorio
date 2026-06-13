@@ -1,0 +1,65 @@
+INSERT INTO monitor (matricula,primeiro_nome,sobrenome)
+VALUES
+('200123456','Maicon','Pessoa Filho'),
+('200124487','Marília','Barbosa dos Santos');
+
+INSERT INTO laboratorio (id_laboratorio,capacidade,bloco)
+VALUES (3,35,'bloco2');
+
+--Tabela associativa
+INSERT INTO monitora (id_laboratorio, matricula)
+VALUES 
+(3 ,'200123456'),
+(3,'200124487');
+
+--valores 
+INSERT INTO dispositivo (id,nome,status,id_lab)
+VALUES
+('440710.000440.2025','computador','funcionando',3),
+('440710.000442.2025','computador','funcionando',3),
+('440710.000454.2025','computador','funcionando',3),
+('440710.000457.2025','computador','funcionando',3),
+('440710.000465.2025','computador','funcionando',3),
+('440710.000466.2025','computador','funcionando',3),
+('440710.000475.2025','computador','funcionando',3),
+('440710.000481.2025','computador','funcionando',3),
+('440710.000482.2025','computador','funcionando',3),
+('440710.000483.2025','computador','funcionando',3),
+('440000.00010.2025','projetor','funcionando',3);
+
+--Tabela associativa
+INSERT INTO verifica (matricula,id)
+VALUES 
+('200123456','440710.000440.2025'),
+('200123456','440710.000442.2025'),
+('200124487','440710.000483.2025'),
+('200124487','440710.000482.2025');
+
+INSERT INTO hardware(id_hardware,nome,tipo,id_dispositivo)
+VALUES
+('1001','mouse','externo','440710.000440.2025'),
+('1002','monitor','externo','440710.000440.2025'),
+('1003','memória RAM','interno','440710.000440.2025'),
+
+('1001','mouse','externo','440710.000442.2025');
+
+INSERT INTO computador (id_dispo, sistema_operacional)
+VALUES
+('440710.000440.2025','Windows 11'),
+('440710.000442.2025','Windows 11'),
+('440710.000454.2025','Windows 11'),
+('440710.000457.2025','Windows 11'),
+('440710.000465.2025','Windows 11'),
+('440710.000466.2025','Windows 11'),
+('440710.000475.2025','Windows 11'),
+('440710.000481.2025','Windows 11'),
+('440710.000482.2025','Windows 11'),
+('440710.000483.2025','Windows 11');
+
+INSERT INTO reproducao (Id_dispo)
+('440000.00010.2025');
+
+INSERT INTO projetor(Id_dispo)
+('440000.00010.2025');
+
+
