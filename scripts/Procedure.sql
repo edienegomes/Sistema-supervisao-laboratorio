@@ -15,18 +15,18 @@ BEGIN
 END;
 $$;
 
-
 CREATE OR REPLACE FUNCTION contar_dispositivos(p_lab INT)
 RETURNS INTEGER
 LANGUAGE plpgsql
 AS $$
 DECLARE
-    v_total INTEGER;
+    total INTEGER;
 BEGIN
     SELECT COUNT(*) INTO v_total
     FROM DISPOSITIVO
     WHERE id_lab = p_lab;
-    RETURN v_total;
+    RETURN total;
+
 END;
 $$;
 
