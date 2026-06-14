@@ -4,7 +4,9 @@ VALUES
 ('200124487','Marília','Barbosa dos Santos','Noturno');
 
 INSERT INTO laboratorio (id_laboratorio,capacidade,bloco)
-VALUES (3,35,'bloco2');
+VALUES 
+(3,35,'bloco2'),
+(2, 30, 'bloco2');
 
 --Tabela associativa
 INSERT INTO monitora (id_laboratorio, matricula)
@@ -29,7 +31,19 @@ VALUES
 ('440710.000481.2025','computador','funcionando',3),
 ('440710.000482.2025','computador','funcionando',3),
 ('440710.000483.2025','computador','inativo',3),
-('440000.00010.2025','projetor','funcionando',3);
+('440000.00010.2025','projetor','funcionando',3),
+('440000.00012.2025','projetor','funcionando',3),
+--Lab Windows L.
+('000007.2021', 'computador', 'funcionando', 2),
+('000008.2021', 'computador', 'funcionando', 2),
+('000009.2021', 'computador', 'funcionando', 2),
+('000011.2021', 'computador', 'funcionando', 2),
+('000014.2021', 'computador', 'funcionando', 2),
+('000022.2021', 'computador', 'funcionando', 2),
+('000024.2021', 'computador', 'funcionando', 2),
+('000025.2021', 'computador', 'funcionando', 2),
+('000028.2021', 'computador', 'funcionando', 2),
+('000029.2021', 'computador', 'funcionando', 2);
 
 --Tabela associativa
 INSERT INTO verifica (matricula,id,data_verificacao)
@@ -37,7 +51,13 @@ VALUES
 ('200123456','440710.000440.2025','2026-05-22'),
 ('200123456','440710.000442.2025','2026-05-21'),
 ('200124487','440710.000483.2025','2026-05-10'),
-('200124487','440710.000482.2025','2026-05-12');
+('200124487','440710.000482.2025','2026-05-12'),
+--Lab Windows L.
+('200123456','000007.2021','2026-05-22'),
+('200124487','000008.2021','2026-05-21'),
+('200123456','000025.2021','2026-05-10'),
+('200124487','000029.2021','2026-05-12');
+
 
 INSERT INTO hardware(id_hardware,nome,tipo,id_dispositivo)
 VALUES
@@ -47,6 +67,7 @@ VALUES
 
 INSERT INTO computador (id_dispo, sistema_operacional)
 VALUES
+--Lab Windows
 ('440710.000440.2025','Windows 11'),
 ('440710.000442.2025','Windows 11'),
 ('440710.000454.2025','Windows 11'),
@@ -56,10 +77,25 @@ VALUES
 ('440710.000475.2025','Windows 11'),
 ('440710.000481.2025','Windows 11'),
 ('440710.000482.2025','Windows 11'),
-('440710.000483.2025','Windows 11');
+('440710.000483.2025','Windows 11'),
+--Lab Windows L.
+('000007.2021','Windows 11'),
+('000008.2021','Windows 11'),
+('000009.2021','Windows 11'),
+('000011.2021','Windows 11'),
+('000014.2021','Windows 11'),
+('000022.2021','Windows 11'),
+('000024.2021','Windows 11'),
+('000025.2021','Windows 11'),
+('000028.2021','Windows 11'),
+('000029.2021','Windows 11');
 
 INSERT INTO reproducao (id_dispo)
-VALUES ('440000.00010.2025');
+VALUES 
+('440000.00010.2025'),
+('440000.00012.2025');
 
 INSERT INTO projetor(id_reproducao)
-VALUES('440000.00010.2025');
+VALUES
+('440000.00010.2025'),
+('440000.00012.2025');
