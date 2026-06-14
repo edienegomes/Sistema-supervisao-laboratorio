@@ -1,3 +1,4 @@
+--Criação de tabelas
 CREATE TABLE MONITOR(
 	matricula INT PRIMARY KEY,
 	primeiro_nome VARCHAR(30) NOT NULL,
@@ -21,10 +22,17 @@ CREATE TABLE MONITORA(
 	FOREIGN KEY (matricula) REFERENCES MONITOR (matricula)
 );
 
+--Criando tabela tipo para ENUM
+CREATE TYPE status_dispositivo AS ENUM(
+	'funcionando',
+	'em manutencao',
+	'inativo'
+);
+
 CREATE TABLE DISPOSITIVO(
 	id VARCHAR(30) PRIMARY KEY,
 	nome VARCHAR(30) NOT NULL,
-	status ENUM('funcionando','em manutencao','inativo') NOT NULL,
+	status status_dispositivo NOT NULL,
 	id_lab INT,
 	
 	FOREIGN KEY (id_lab) REFERENCES LABORATORIO (id_laboratorio)
@@ -32,7 +40,7 @@ CREATE TABLE DISPOSITIVO(
 
 CREATE TABLE VERIFICA(
 	matricula INT,
-	id INT,
+	id VARCHAR,
 	data_verificacao DATE NOT NULL,
 	
 	PRIMARY KEY (matricula, id),
@@ -45,7 +53,7 @@ CREATE TABLE HARDWARE(
 	id_hardware INT PRIMARY KEY,
 	nome VARCHAR(30) NOT NULL,
 	tipo VARCHAR(30) NOT NULL,
-	id_dispositivo INT,
+	id_dispositivo VARCHAR,
 	
 	FOREIGN KEY (id_dispositivo) REFERENCES DISPOSITIVO (id)
 );
@@ -58,20 +66,19 @@ CREATE TABLE COMPUTADOR(
 );
 
 CREATE TABLE REPRODUCAO(
-	id_dispo INT primary key,
+	id_dispo VARCHAR primary key,
 	
 	FOREIGN KEY (id_dispo) REFERENCES DISPOSITIVO (id)
 );
 
 CREATE TABLE TELEVISAO(
-	id_reproducao INT PRIMARY KEY,
+	id_reproducao VARCHAR PRIMARY KEY,
 	
 	FOREIGN KEY (id_reproducao) REFERENCES REPRODUCAO (id_dispo)
 );
 
 CREATE TABLE PROJETOR(
-	id_reproducao INT PRIMARY KEY,
+	id_reproducao VARCHAR PRIMARY KEY,
 	
 	FOREIGN KEY (id_reproducao) REFERENCES REPRODUCAO (id_dispo)
 );
-
