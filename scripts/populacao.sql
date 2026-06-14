@@ -1,4 +1,4 @@
-INSERT INTO monitor (matricula,primeiro_nome,sobrenome, turno)
+INSERT INTO monitor (matricula,primeiro_nome,sobrenome,turno)
 VALUES
 ('200123456','Maicon','Pessoa Filho','Diurno'),
 ('200124487','Marília','Barbosa dos Santos','Noturno');
@@ -41,7 +41,9 @@ VALUES
 ('1002','monitor','externo','440710.000440.2025'),
 ('1003','memória RAM','interno','440710.000440.2025'),
 
-('1001','mouse','externo','440710.000442.2025');
+('1004','mouse','externo','440710.000442.2025'),
+('1005','monitor','externo','440710.000442.2025'),
+('1006','memória RAM','interno','440710.000442.2025');
 
 INSERT INTO computador (id_dispo, sistema_operacional)
 VALUES
@@ -56,9 +58,8 @@ VALUES
 ('440710.000482.2025','Windows 11'),
 ('440710.000483.2025','Windows 11');
 
-INSERT INTO reproducao (Id_dispo)
-('440000.00010.2025');
+INSERT INTO reproducao (id_dispo)
+VALUES ('440000.00010.2025');
 
-INSERT INTO projetor(Id_dispo)
-('440000.00010.2025');
-
+INSERT INTO projetor(id_reproducao)
+VALUES('440000.00010.2025');
