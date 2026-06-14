@@ -39,11 +39,7 @@ INSERT INTO hardware(id_hardware,nome,tipo,id_dispositivo)
 VALUES
 ('1001','mouse','externo','440710.000440.2025'),
 ('1002','monitor','externo','440710.000440.2025'),
-('1003','memória RAM','interno','440710.000440.2025'),
-
-('1004','mouse','externo','440710.000442.2025'),
-('1005','monitor','externo','440710.000442.2025'),
-('1006','memória RAM','interno','440710.000442.2025');
+('1003','memória RAM','interno','440710.000440.2025');
 
 INSERT INTO computador (id_dispo, sistema_operacional)
 VALUES
