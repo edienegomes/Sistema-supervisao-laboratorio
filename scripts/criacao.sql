@@ -74,3 +74,4 @@ CREATE TABLE PROJETOR(
 	
 	FOREIGN KEY (id_reproducao) REFERENCES REPRODUCAO (id_dispo)
 );
+
