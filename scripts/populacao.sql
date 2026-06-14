@@ -93,9 +93,11 @@ VALUES
 INSERT INTO reproducao (id_dispo)
 VALUES 
 ('440000.00010.2025'),
+--Lab Windows L.
 ('440000.00012.2025');
 
 INSERT INTO projetor(id_reproducao)
 VALUES
 ('440000.00010.2025'),
+--Lab Windows L.
 ('440000.00012.2025');
