@@ -8,8 +8,12 @@ VALUES (3,35,'bloco2');
 
 --Tabela associativa
 INSERT INTO monitora (id_laboratorio, matricula)
-VALUES 
+VALUES
+(1,'200123456'),
+(2,'200123456'),
 (3,'200123456'),
+(1,'200124487'),
+(2,'200124487'),
 (3,'200124487');
 
 --valores 
