@@ -26,12 +26,12 @@ A plataforma centraliza informações sobre equipamentos, laboratórios e verifi
 
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 - **PostgreSQL – Banco de dados relacional**
-- **DBeaver – Administração do banco**
-- **Git & GitHub - Controle de Versão**
-- **Java - Linguagem de Programação, testes de integração e consultas ao sistema** 
 - **SQL – Criação e manipulação do banco de dados**
-- **VS Code - Ambiente de Desenvolvimento (IDE)**
+- **DBeaver – Administração do banco**
 - **BRMW - Modelagem conceitual e lógica**
+- **Git & GitHub - Controle de Versão**
+- **VS Code - Ambiente de Desenvolvimento (IDE)**
+- **Java - Linguagem de Programação, testes de integração e consultas ao sistema** 
 
 ## 🧱 Modelagem do Banco de Dados
 - **Modelo conceitual**
