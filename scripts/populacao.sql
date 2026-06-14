@@ -21,6 +21,7 @@ VALUES
 --valores 
 INSERT INTO dispositivo (id,nome,status,id_lab)
 VALUES
+--Lab Windows
 ('440710.000440.2025','computador','em manutencao',3),
 ('440710.000442.2025','computador','funcionando',3),
 ('440710.000454.2025','computador','funcionando',3),
@@ -32,7 +33,6 @@ VALUES
 ('440710.000482.2025','computador','funcionando',3),
 ('440710.000483.2025','computador','inativo',3),
 ('440000.00010.2025','projetor','funcionando',3),
-('440000.00012.2025','projetor','funcionando',3),
 --Lab Windows L.
 ('000007.2021', 'computador', 'funcionando', 2),
 ('000008.2021', 'computador', 'funcionando', 2),
@@ -43,11 +43,13 @@ VALUES
 ('000024.2021', 'computador', 'funcionando', 2),
 ('000025.2021', 'computador', 'funcionando', 2),
 ('000028.2021', 'computador', 'funcionando', 2),
-('000029.2021', 'computador', 'funcionando', 2);
+('000029.2021', 'computador', 'funcionando', 2),
+('440000.00012.2025','projetor','funcionando',2);
 
 --Tabela associativa
 INSERT INTO verifica (matricula,id,data_verificacao)
-VALUES 
+VALUES
+--Lab Windows
 ('200123456','440710.000440.2025','2026-05-22'),
 ('200123456','440710.000442.2025','2026-05-21'),
 ('200124487','440710.000483.2025','2026-05-10'),
