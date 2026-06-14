@@ -1,8 +1,8 @@
 # 🖥️ Sistema-supervisao-laboratorio
 ## 📋 Descrisão do Projeto
-O Sistema de Supervisão de Laboratórios é uma aplicação desenvolvida para auxiliar os monitores no acompanhamento e gerenciamento dos laboratórios de informática. O sistema tem como principal objetivo fornecer uma visão centralizada da situação dos dispositivos disponíveis, permitindo identificar equipamentos em funcionamento, com defeito, em manutenção ou indisponíveis.
+O Sistema de Supervisão de Laboratórios é uma aplicação desenvolvida para apoiar o gerenciamento e monitoramento dos laboratórios de informática da Universidade de Pernambuco (UPE) – campus Garanhuns.
 
-A solução busca otimizar o processo de supervisão dos laboratórios, facilitando o registro, a consulta e o monitoramento das condições dos equipamentos, contribuindo para uma gestão mais eficiente dos recursos tecnológicos da instituição.
+A plataforma centraliza informações sobre equipamentos, laboratórios e verificações realizadas pelos monitores, permitindo um controle mais eficiente, organizado e rastreável dos recursos tecnológicos.
 ## ⭐ Funcionalidades Principais
 
 - ***Monitor:*** Permite o gerenciamento e acompanhamento das atividades realizadas pelos monitores nos laboratórios.
@@ -10,12 +10,59 @@ A solução busca otimizar o processo de supervisão dos laboratórios, facilita
 - ***Laboratório:*** Controle e visualização das informações de cada laboratório, incluindo status e disponibilidade.
 
 - ***Dispositivos:*** Registro e monitoramento dos equipamentos, permitindo acompanhar seu estado (funcionando, manutenção ou indisponível).
+## 🎯 Objetivo
+- Centralizar a gestão dos laboratórios
+- Monitorar o estado dos dispositivos em tempo real
+- Facilitar o trabalho dos monitores
+- Garantir controle patrimonial e histórico de uso dos equipamentos
 
-## 🚀 Tecnologias Utilizadas
-- ***PostgresSQL***
-## 🛠️ Ferramentas Utilizadas
-- ***DBeaver***
-- ***Git***
-- ***Git Hub***
+## 👥 Usuários do Sistema
+- **Monitores:** realizam verificações, registram status dos dispositivos e reportam problemas
+- **Gestores de laboratório:** acompanham a situação geral dos laboratórios e equipamentos
 
+## ⚙️ Funcionalidades Principais
+- **Cadastro de monitores**
+- **Cadastro de laboratórios**
+- **Associação de monitores a laboratórios**
+- **Cadastro de dispositivos**
+- **Cadastro de hardware vinculado aos dispositivos**
+- **Registro de verificações (monitoramento periódico)**
+- **Consulta de status dos equipamentos**
+- **Especialização de dispositivos (computador, projetor, TV)**
 
+## 🛠️ Tecnologias e Ferramentas Utilizadas
+- **PostgreSQL – Banco de dados relacional**
+- **DBeaver – Administração do banco**
+- **Git e GitHub - Controle de Versão:**
+- **Java - Linguagem de Programação, testes de integração e consultas ao sistema** 
+- **SQL – Criação e manipulação do banco de dados**
+- **VS Code - Ambiente de Desenvolvimento (IDE):**
+- **BRMW - Modelagem conceitual e lógica**
+
+## 🧱 Modelagem do Banco de Dados
+- **Modelo conceitual**
+- **Modelo lógico**
+- **Implementação no PostgreSQL**
+```bash
+📁 Estrutura do Projeto
+/scripts
+   ├── criacao.sql
+   ├── populacao.sql
+/docs
+   ├── modelo_conceitual.png
+   ├── modelo_logico.png
+README.md
+```
+## 🚀 Possíveis Melhorias Futuras
+- **Interface gráfica para usuários finais**
+- **Sistema de login com níveis de acesso**
+- **Dashboard de status em tempo real**
+- **Relatórios automáticos de manutenção**
+
+## 📄 Autores
+- **Ediene Gomes de Lima**
+- **Felipe Feliciano Lopes**
+- **João Barreto Campello e Silva**
+
+## 📌 Notas
+**Projeto desenvolvido para fins acadêmicos, com foco em engenharia de requisitos, modelagem de dados e implementação de sistemas de supervisão.**
