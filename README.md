@@ -3,13 +3,7 @@
 O Sistema de Supervisão de Laboratórios é uma aplicação desenvolvida para apoiar o gerenciamento e monitoramento dos laboratórios de informática da Universidade de Pernambuco (UPE) – campus Garanhuns.
 
 A plataforma centraliza informações sobre equipamentos, laboratórios e verificações realizadas pelos monitores, permitindo um controle mais eficiente, organizado e rastreável dos recursos tecnológicos.
-## ⭐ Funcionalidades Principais
 
-- ***Monitor:*** Permite o gerenciamento e acompanhamento das atividades realizadas pelos monitores nos laboratórios.
-
-- ***Laboratório:*** Controle e visualização das informações de cada laboratório, incluindo status e disponibilidade.
-
-- ***Dispositivos:*** Registro e monitoramento dos equipamentos, permitindo acompanhar seu estado (funcionando, manutenção ou indisponível).
 ## 🎯 Objetivo
 - Centralizar a gestão dos laboratórios
 - Monitorar o estado dos dispositivos em tempo real
