@@ -60,9 +60,9 @@ README.md
 - **Relatórios automáticos de manutenção**
 
 ## 📄 Autores
-- **Ediene Gomes de Lima**
-- **Felipe Feliciano Lopes**
-- **João Barreto Campello e Silva**
+- **Ediene Gomes de Lima - ([Perfil do GitHub](https://github.com/edienegomes))**
+- **Felipe Feliciano Lopes - ([Perfil do GitHub](https://github.com/FelipeFelicianoLopes))**
+- **João Barreto Campello e Silva - ([Perfil do GitHub](https://github.com/JB-2499))**
 
 ## 📌 Notas
 **Projeto desenvolvido para fins acadêmicos, com foco em engenharia de requisitos, modelagem de dados e implementação de sistemas de supervisão.**
