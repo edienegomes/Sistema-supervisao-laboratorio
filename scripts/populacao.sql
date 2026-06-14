@@ -93,13 +93,15 @@ VALUES
 ('000029.2021','Windows 11');
 
 INSERT INTO reproducao (id_dispo)
-VALUES 
+VALUES
+--Lab Windows
 ('440000.00010.2025'),
 --Lab Windows L.
 ('440000.00012.2025');
 
 INSERT INTO projetor(id_reproducao)
 VALUES
+--Lab Windows
 ('440000.00010.2025'),
 --Lab Windows L.
 ('440000.00012.2025');
