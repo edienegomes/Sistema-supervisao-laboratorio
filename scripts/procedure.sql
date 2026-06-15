@@ -110,15 +110,3 @@ BEGIN
         (SELECT COUNT(*):: INT FROM verifica);
 END;
 $$;
-
-
-
-
-
-
-
-
-
-
-
-

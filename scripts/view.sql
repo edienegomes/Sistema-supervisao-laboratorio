@@ -59,6 +59,3 @@ SELECT
 FROM LABORATORIO l
 JOIN DISPOSITIVO d
     ON l.id_laboratorio = d.id_lab;	
-	
-	
-	

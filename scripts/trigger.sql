@@ -90,13 +90,3 @@ CREATE TRIGGER trg_limitar_monitores
 BEFORE INSERT ON monitor
 FOR EACH ROW
 EXECUTE FUNCTION limitar_monitores();
-
-
-
-
-
-
-
-
-
-
