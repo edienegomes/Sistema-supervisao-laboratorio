@@ -39,15 +39,17 @@ A plataforma centraliza informações sobre equipamentos, laboratórios e verifi
 - **Implementação no PostgreSQL**
 ```bash
 📁 Estrutura do Projeto
+/Diagramas
+   ├── modelo_conceitual.png
+   ├── modelo_logico.png
+/Documentação
+   ├── Requisitos Sistema Laboratório.pdf
 /scripts
    ├── criacao.sql
    ├── populacao.sql
    ├── procedure.sql
    ├── trigger.sql
    ├── view.sql
-/Diagramas
-   ├── modelo_conceitual.png
-   ├── modelo_logico.png
 README.md
 ```
 ## 🚀 Possíveis Melhorias Futuras
