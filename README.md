@@ -45,7 +45,7 @@ A plataforma centraliza informações sobre equipamentos, laboratórios e verifi
    ├── procedure.sql
    ├── trigger.sql
    ├── view.sql
-/docs
+/Diagramas
    ├── modelo_conceitual.png
    ├── modelo_logico.png
 README.md
