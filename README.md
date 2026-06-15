@@ -65,3 +65,6 @@ README.md
 
 ## 📌 Notas
 **Projeto desenvolvido para fins acadêmicos, com foco em engenharia de requisitos, modelagem de dados e implementação de sistemas de supervisão.**
+
+## ⚠️ Aviso
+**Erro no modelo conceitual: Devido a limitações da plataforma não foi possível alterar o tipo INT para VARCHAR, mas foi realizado a troca no modelo lógico**
